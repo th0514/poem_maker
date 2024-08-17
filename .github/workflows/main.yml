@@ -11,4 +11,4 @@ jobs:
 
       - name: Access Secrets
         run : |
-          echo "Secrets : ${{secrets.OPENAI_API}}"
+          echo "Secrets : ${{secrets.OPENAI_API_KEY}}"
