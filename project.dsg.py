@@ -2,8 +2,7 @@ import os
 import streamlit as st
 from openai import OpenAI
 
-open_api= os.getenv("OPENAI_API_KEY")
-client = OpenAI(api_key=open_api)
+client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
 def poem_maker(prompt):
     completion = client.chat.completions.create(
